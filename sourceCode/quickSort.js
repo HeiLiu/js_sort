@@ -1,3 +1,4 @@
+// log2(n)
 function QuickSort (arr) {
   if(arr.length <= 1) {
     return arr
@@ -5,7 +6,7 @@ function QuickSort (arr) {
   // 找一个基准点  取中间的数
   var num = Math.floor(len/2)
   // 从数组中把基准点拿出来
-  var numValue = arr.splice(num, 1)
+  var numValue = arr.splice(num, 1)[0]
   var left = [], right =[]
   for(var i = 0, len = arr.length; i< len; i++ ) {
     if(arr[i] < numValue) {
